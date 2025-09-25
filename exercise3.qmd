@@ -1,0 +1,14 @@
+---
+title: "exercise3"
+author: "kumino"
+format: html
+editor: visual
+---
+
+```{r}
+cat("Hello R!")
+```
+
+```{python echo=FALSE}
+print("Hello Python!")
+```
