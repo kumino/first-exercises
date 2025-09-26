@@ -1,0 +1,28 @@
+---
+title: "Small data analysis in Python and R"
+author: "kumino"
+date: "2025-09-26"
+format:
+  html: default
+  pdf: default
+editor: visual
+---
+
+# Introduction
+
+The document shows a calculation of summary statistics in R and a plot of the iris dataset.
+
+```{r}
+summary(mtcars)
+```
+
+```{python}
+from sklearn.datasets import load_iris
+import matplotlib.pyplot as plt
+iris = load_iris(as_frame = True)
+species = iris.target.replace(dict(enumerate(iris.target_names)))
+df = iris.data.assign(species = species)
+plt.scatter(df["petal length (cm)"],df["sepal length (cm)"])
+plt.xlabel("petal length (cm)")
+plt.ylabel("sepal length (cm)")
+```
