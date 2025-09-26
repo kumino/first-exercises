@@ -1,0 +1,22 @@
+---
+title: "Exercise 8"
+author: "kumino"
+format: html
+editor: visual
+---
+
+In this document we calculate the mean of a column from a dataset in R and plot sepal length vs sepal width in Python.
+
+```{r}
+mean(mtcars$mpg)
+```
+
+```{python}
+from sklearn.datasets import load_iris
+import matplotlib.pyplot as plt
+iris = load_iris(as_frame=True)
+plt.scatter(iris.data["sepal length (cm)"],iris.data["sepal width (cm)"])
+plt.xlabel("sepal length (cm)")
+plt.ylabel("sepal width (cm)")
+plt.show()
+```
