@@ -1,0 +1,1 @@
+This project consists simply of several solutions to basic exercises, it is also a  bit of practice on using simple Git commands.
